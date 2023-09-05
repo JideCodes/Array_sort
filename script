@@ -1,0 +1,10 @@
+let h1 = document.querySelector("h1");
+let arr1 = [1,2,3,5,2];
+let arr2 = [8,5,2,4];
+
+function sorter(){
+  let result = (arr1.sort()).concat((arr2.sort()));
+  return result.join(", ");
+}
+
+h1.textContent = sorter();
